@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class StudentController {
     @GetMapping("hello")
-    public void printHello(){
-        System.out.println("hello");
+    public String printHello(){
+        return "Hello";
     }
 }
